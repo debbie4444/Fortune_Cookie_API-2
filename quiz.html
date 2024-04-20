@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Form Data</title>
+    <style>
+ @font-face {
+    font-family: "InFont"; 
+    src: url("font/Frank_the_Architect.ttf") format("truetype"); }
+body{
+    font-family: "InFont", sans-serif;
+background-color: rgb(76,63,205);
+}
+        .image-button {
+            width: 50px; 
+            height: auto;
+            transition: transform 0.3s; 
+            cursor: pointer;
+        }
+        .images-container {
+            display: flex;       
+            justify-content: center; 
+            align-items: center;   
+            height: 100vh;      
+            gap: 100px;   
+        }
+
+        .image-button:hover {
+            transform: scale(2.4); 
+        }
+        .centered-container {
+            display: grid;
+            justify-content: center; 
+            height: 400vh; 
+        }
+    </style>
+</head>
+<body>
+    <div class="images-container">
+        <img src="cookie/c1.png" width="400" height="400" alt="Fortune Cookie 1" id="imageButton1" style="cursor:pointer;" class="image-button">
+        <img src="cookie/c2.png" width="400" height="400" alt="Fortune Cookie 2" id="imageButton2" style="cursor:pointer;" class="image-button">
+        <img src="cookie/c3.png" width="400" height="400" alt="Fortune Cookie 3" id="imageButton3" style="cursor:pointer;" class="image-button">    
+
+        <script src="callapi.js"></script>
+    </div>
+</body>
+</html>
